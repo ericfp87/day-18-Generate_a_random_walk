@@ -3,7 +3,8 @@ import random
 
 tim = t.Turtle()
 screen = t.Screen()
-
+tim.pensize(15)
+tim.speed("fastest")
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray",
            "SeaGreen"]
 
@@ -15,7 +16,7 @@ def walk():
     tim.color(random.choice(colours))
 
 
-for i in range(0, 1000):
+for i in range(200):
     walk()
 
 screen.exitonclick()
